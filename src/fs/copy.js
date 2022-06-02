@@ -2,8 +2,6 @@ import fs from 'fs/promises';
 import path from 'path';
 import { URL } from 'url';
 
-
-
 export const copy = async () => {
   const  __dirname = decodeURI(new URL('.', import.meta.url).pathname);
   const filesPath = path.join(__dirname, 'files');
@@ -23,6 +21,3 @@ export const copy = async () => {
   })
   .catch((res, rej) => console.error('FS operation failed'))
 };
-
-
-copy()
