@@ -12,6 +12,3 @@ export const rename = async () => {
     .catch((res, rej) => fs.rename(filesPath, renameFilesPath))
 
 };
-
-
-rename()
