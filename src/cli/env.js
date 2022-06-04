@@ -1,3 +1,7 @@
 export const parseEnv = () => {
-    // Write your code here 
+    Object.entries(process.env).forEach(el => {
+        if(el[0].match(/^RSS_/gm)){
+            console.log(`${el[0]}=${el[1]}`)
+        }
+    })
 };
