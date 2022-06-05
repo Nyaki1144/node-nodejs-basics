@@ -4,3 +4,6 @@ export const nthFibonacci = (n) => n < 2 ? n : nthFibonacci(n - 1) + nthFibonacc
 export const sendResult = () => {
     // This function sends result of nthFibonacci computations to main thread
 };
+
+
+console.log(nthFibonacci(50))
