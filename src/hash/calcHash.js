@@ -14,5 +14,3 @@ export const calculateHash = async () => {
 
     return calcHash
 };
-
-calculateHash()
