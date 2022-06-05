@@ -2,9 +2,6 @@ import path from 'path';
 import { release, version } from 'os'
 import http  from 'http'
 
-console.log(http.createServer)
-// const { createServer: createServerHttp } = require('http');
-// require('./files/c');
 const  __dirname = decodeURI(new URL('.', import.meta.url).pathname);
 const  __filename = path.join(__dirname, 'cjsToEsm.mjs');
 
